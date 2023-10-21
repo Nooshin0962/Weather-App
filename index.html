@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Site</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">New York</div>
+        <div class="col-2">London</div>
+        <div class="col-2">Paris</div>
+        <div class="col-2">Berlin</div>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col-6">
+            <input type="text" class="form-control" id="city" />
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-success" id="currentBtn">
+              Current
+            </button>
+          </div>
+        </div>
+      </form>
+      <br />
+      <div class="row">
+        <div class="col-6">
+          <h1>Tehran</h1>
+        </div>
+        <div class="col-6">
+          <h2>
+            <span id="showntemperature">19</span>
+            °C
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6" id="daytime"></div>
+        <div class="col-6">
+          <h3>humidity: <span id="humidity">0</span>%</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6" id="condition"></div>
+        <div class="col-6">
+          <h3>wind: <span id="wind">2</span> m/s</h3>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-1">
+          <div class="card border-light">
+            <div class="card-body">
+              <p class="card-text text-center">Sun</p>
+              <p class="card-text text-center">☀️</p>
+              <p class="card-text text-center">31°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-1">
+          <div class="card border-light">
+            <div class="card-body">
+              <p class="card-text text-center">Mon</p>
+              <p class="card-text text-center">☀️</p>
+              <p class="card-text text-center">30°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-1">
+          <div class="card border-light">
+            <div class="card-body">
+              <p class="card-text text-center">Tue</p>
+              <p class="card-text text-center">🌥</p>
+              <p class="card-text text-center">28°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-1">
+          <div class="card border-light">
+            <div class="card-body">
+              <p class="card-text text-center">Wed</p>
+              <p class="card-text text-center">☁️</p>
+              <p class="card-text text-center">26°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-1">
+          <div class="card border-light">
+            <div class="card-body">
+              <p class="card-text text-center">Thu</p>
+              <p class="card-text text-center">☀️</p>
+              <p class="card-text text-center">29°C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
